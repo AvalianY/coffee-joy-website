@@ -13,7 +13,6 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 16px;
-  margin-bottom: 32px;
 }
 .welcome-main-wrapper {
   display: flex;
