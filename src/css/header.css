@@ -1,48 +1,70 @@
-/* ===== HEADER WRAPPER ===== */
-.header {
-    padding: 18px 64px;
-    background-color: #e0cbb4;
+/* ========== BASE RESET ========== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-/* ===== FLEX ALIGNMENT ===== */
+body {
+    font-family: "Inter", sans-serif;
+    color: #0b0803;
+}
+
+/* ========== CONTAINER ========== */
+.container {
+    width: 100%;
+    max-width: 1312px;
+    margin: 0 auto;
+    padding-left: 4.44%;
+    /* 64px від 1440px */
+    padding-right: 4.44%;
+}
+
+/* ========== HEADER ========== */
+.header {
+    background-color: #e0cbb4;
+    padding: 18px 4.44%;
+    /* 18px top-bottom, 64px left-right */
+}
+
+/* FLEX layout */
 .header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 72px;
 }
 
-/* ===== LOGO ===== */
-
+/* ========== LOGO ========== */
 .icon-logo {
     display: block;
     width: 63px;
-    height: 36px;
-    fill: #0B0803;
+    height: auto;
+    fill: #0b0803;
 }
 
-/* ===== NAVIGATION ===== */
+/* ========== NAVIGATION ========== */
 .header-nav {
-    display: flex;
-    align-items: center;
-}
-
-.nav-list {
     display: none;
+    /* спочатку приховано для mobile */
 }
 
 .nav-list {
     display: flex;
-    align-items: center;
-    gap: 32px;
+    gap: 2.22%;
+    /* 32px від 1440px */
+    list-style: none;
 }
 
 .nav-link {
-    position: relative;
-    display: block;
-    padding: 6px 0;
     font-size: 16px;
+    font-weight: 400;
     line-height: 1.5;
     color: #0b0803;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover,
@@ -50,52 +72,70 @@
     color: #b37b4e;
 }
 
-/* ===== BURGER BUTTON ===== */
-.menu-open-btn {
-    background: none;
+/* ========== BURGER BUTTON ========== */
+.burger-btn {
+    background: transparent;
     border: none;
-    cursor: pointer;
     padding: 0;
+    display: block;
 }
 
 .icon-menu {
-    display: block;
-    fill: #0B0803;
+    fill: #0b0803;
+    width: 24px;
+    height: 24px;
 }
 
-/* ===== MOBILE ===== */
+/* ========== MOBILE (до 767px) ========== */
 @media screen and (max-width: 767px) {
+    .container {
+        padding-left: 4.27%;
+        /* 16px при 375px */
+        padding-right: 7.47%;
+        /* 28px при 375px */
+    }
+
+    .header-container {
+        height: 72px;
+    }
 
     .header-nav {
         display: none;
     }
 
-    .menu-open-btn {
+    .burger-btn {
         display: block;
     }
 }
 
-/* ===== TABLET ===== */
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+/* ========== TABLET (від 768px) ========== */
+@media screen and (min-width: 768px) {
+    .header-nav {
+        display: block;
+    }
+
+    .burger-btn {
+        display: none;
+    }
 
     .nav-list {
         gap: 32px;
     }
-
-    .icon-logo {
-        width: 72px;
-        height: 32px;
-    }
-
-    .menu-open-btn {
-        display: none;
-    }
 }
 
-/* ===== DESKTOP ===== */
-@media screen and (min-width: 1280px) {
+/* ========== DESKTOP (від 1440px) ========== */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1312px;
+        padding-left: 64px;
+        padding-right: 64px;
+    }
 
-    .menu-open-btn {
+    .header-nav {
+        display: block;
+    }
+
+    .burger-btn {
         display: none;
     }
 }
