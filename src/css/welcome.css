@@ -75,6 +75,20 @@
   justify-content: center;
   flex-direction: row;
   gap: 12px;
+
+  margin: 0 auto;
+}
+.animated-button {
+  transition: all 0.3s ease;
+}
+
+.animated-button:focus {
+  transform: translateY(2px);
+  box-shadow: 0 0 1px 0 var(--opacity-neutral-darkest-5),
+    inset 0 -1px 1px 0 var(--opacity-neutral-darkest-25),
+    inset 0 0 0 1px var(--opacity-neutral-darkest-15),
+    inset 0 1px 1px 0 var(--opacity-white-20),
+    inset 0 24px 18px 0 var(--opacity-white-5);
 }
 
 /* Styles for Tablet devices */
@@ -90,6 +104,7 @@
   .welcome-button {
     width: 181px;
     white-space: nowrap;
+    margin: 0;
   }
   .welcome-container {
     display: flex;
@@ -114,5 +129,25 @@
   }
   .welcome-title {
     font-size: 48px;
+  }
+  .welcome-wrapper {
+    margin-bottom: 0;
+  }
+  .welcome-container {
+    gap: 80px;
+  }
+  .animated-button {
+    transition: all 0.3s ease;
+    margin: 0;
+  }
+
+  .animated-button:hover,
+  .animated-button:focus {
+    transform: translateY(2px);
+    box-shadow: 0 0 1px 0 var(--opacity-neutral-darkest-5),
+      inset 0 -1px 1px 0 var(--opacity-neutral-darkest-25),
+      inset 0 0 0 1px var(--opacity-neutral-darkest-15),
+      inset 0 1px 1px 0 var(--opacity-white-20),
+      inset 0 24px 18px 0 var(--opacity-white-5);
   }
 }
