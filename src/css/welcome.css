@@ -53,6 +53,7 @@
 }
 .icon.icon-map-pin {
   fill: #fff;
+  stroke: #fff;
 }
 .welcome-button {
   border-radius: 100px;
