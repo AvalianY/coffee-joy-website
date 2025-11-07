@@ -61,7 +61,10 @@
   /* Box model */
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 24px;
+
+  /* Relative positioning for error message */
+  position: relative;
 }
 
 .subscribe-input {
@@ -72,15 +75,19 @@
   padding: 10px;
 
   /* Typography */
+  font-family: var(--main-family);
+  font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  font-weight: 400;
   color: var(--opacity-neutral-darkest-60);
 
   /* Visual */
   background-color: var(--opacity-white-0);
   border: 1px solid var(--opacity-neutral-darkest-15);
   border-radius: 12px;
+
+  /* Relative positioning for error message */
+  position: relative;
 }
 
 /* 1. Плейсхолдер напівпрозорий (стан за замовчуванням) */
@@ -95,14 +102,22 @@
   opacity: 0;
 }
 
-/* 2. Непрозорий плейсхолдер - коли є введений текст */
+/* 2. Стиль введеного тексту */
 .subscribe-input:not(:placeholder-shown) {
+  font-family: var(--main-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
   color: var(--color-text);
 }
 
 /* 3. Фокус стан - без плейсхолдера, з курсором */
 .subscribe-input:focus {
   outline: none;
+  font-family: var(--main-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
   color: var(--color-text);
 }
 
@@ -116,6 +131,33 @@
 /* Плейсхолдер при помилці */
 .subscribe-input:invalid:placeholder-shown::placeholder {
   color: var(--opacity-neutral-darkest-60);
+}
+
+/* Повідомлення про помилку */
+.subscribe-input-error {
+  /* Typography */
+  font-family: var(--main-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: var(--color-error-red);
+
+  /* Absolute positioning - positioned relative to form */
+  position: absolute;
+  top: 40px; /* Right at the bottom edge of input */
+  left: 0;
+
+  /* Invisible by default */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  /* Doesn't take space in layout */
+  pointer-events: none;
+}
+
+/* Показати помилку при невалідному вводі (після введення тексту) */
+.subscribe-input:invalid:not(:placeholder-shown) ~ .subscribe-input-error {
+  opacity: 1;
 }
 
 .subscribe-button {
