@@ -36,14 +36,13 @@
   color: var(--color-text);
 }
 
-.subscribe-heading-line-first {
-
-}
-.subscribe-heading-line-second {
-
-}
+/* Mobile: кожен span на окремому рядку */
+.subscribe-heading-line-first,
+.subscribe-heading-line-second,
 .subscribe-heading-line-third {
+  display: block;
 }
+
 .subscribe-text {
   /* Typography */
   font-size: 18px;
@@ -84,6 +83,41 @@
   border-radius: 12px;
 }
 
+/* 1. Плейсхолдер напівпрозорий (стан за замовчуванням) */
+.subscribe-input::placeholder {
+  color: var(--opacity-neutral-darkest-60);
+  transition: opacity 0.3s ease;
+}
+
+/* Плейсхолдер зникає при фокусі та наведенні */
+.subscribe-input:focus::placeholder,
+.subscribe-input:hover::placeholder {
+  opacity: 0;
+}
+
+/* 2. Непрозорий плейсхолдер - коли є введений текст */
+.subscribe-input:not(:placeholder-shown) {
+  color: var(--color-text);
+}
+
+/* 3. Фокус стан - без плейсхолдера, з курсором */
+.subscribe-input:focus {
+  outline: none;
+  color: var(--color-text);
+}
+
+/* Фокус при помилці - без зміни кольору рамки */
+.subscribe-input:focus:invalid {
+  border-color: var(--opacity-neutral-darkest-15);
+}
+
+/* 4. Помилка стан - без візуальних змін рамки */
+
+/* Плейсхолдер при помилці */
+.subscribe-input:invalid:placeholder-shown::placeholder {
+  color: var(--opacity-neutral-darkest-60);
+}
+
 .subscribe-button {
   /* Box model */
   display: flex;
@@ -121,11 +155,9 @@
   justify-content: center;
   align-items: center;
 
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   fill: var(--color-white);
-
-
 }
 
 .subscribe-text-small {
@@ -145,4 +177,39 @@
 .subscribe-image {
   height: 100%;
   object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .subscribe-form {
+    flex-direction: row;
+  }
+
+  .subscribe-input {
+    width: 340px;
+  }
+
+  .subscribe-heading-line-first,
+  .subscribe-heading-line-second,
+  .subscribe-heading-line-third {
+    display: inline;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .subscribe {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .subscribe-column {
+    width: 640px;
+  }
+
+  .subscribe-input {
+    /* width: 339px; */
+  }
+
+  .subscribe-heading-line-third {
+    display: block;
+  }
 }
