@@ -36,6 +36,14 @@
   color: var(--color-text);
 }
 
+.subscribe-heading-line-first {
+
+}
+.subscribe-heading-line-second {
+
+}
+.subscribe-heading-line-third {
+}
 .subscribe-text {
   /* Typography */
   font-size: 18px;
@@ -79,39 +87,45 @@
 .subscribe-button {
   /* Box model */
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  gap: 8px;
-  width: 100%;
-  height: 48px;
-  padding: 10px;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 24px 10px 24px;
+  flex-shrink: 0;
 
   /* Typography */
   font-size: 16px;
   line-height: 150%;
   color: var(--color-white);
-  text-align: center;
+  font-family: var(--main-family);
+  font-weight: 500;
 
   /* Visual */
   background-color: var(--color-button);
   border: 0;
   border-radius: 100px;
+  box-shadow:
+    inset 0px 32px 24px 0px var(--opacity-white-5),
+    inset 0px 2px 1px 0px var(--opacity-white-25),
+    inset 0px 0px 0px 1px var(--opacity-neutral-darkest-15),
+    inset 0px -2px 1px 0px var(--opacity-neutral-darkest-50),
+    0px 1px 2px 0px var(--opacity-neutral-darkest-5);
 
   /* Misc */
   cursor: pointer;
 }
 
-.icon {
+.icon-chevrons-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 20px;
   height: 20px;
-  fill: currentColor;
-  flex-shrink: 0;
-  display: inline-block;
-}
+  fill: var(--color-white);
 
-.icon use {
-  width: 100%;
-  height: 100%;
+
 }
 
 .subscribe-text-small {
