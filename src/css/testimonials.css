@@ -1,27 +1,19 @@
-/* .visitors-container {
-  margin: 0 auto;
+/* #region Testimonials */
 
-  background: #e0cbb4;
-}
-@media only screen and (max-width: 767px) {
-  .visitors-container {
-    padding: 64px 16px;
-    width: 320px;
-  }
+.testimonials {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
-@media only screen and (min-width: 768px) {
-  .visitors-container {
-    padding: 64px 32px;
-    max-width: 768px;
-  }
+.star-filled {
+  fill: #0b0803;
 }
-@media only screen and (min-width: 1440px) {
-  .visitors-container {
-    padding: 64px;
-    max-width: 1440px;
-  }
-} */
+
+.star-outline {
+  stroke-width: 1px;
+  stroke: #0b0803;
+  fill: transparent;
+}
 
 .visitors-title {
   font-family: 'Aboreto', sans-serif;
@@ -30,12 +22,12 @@
   line-height: 1.2;
   letter-spacing: -0.01em;
   color: #0b0803;
-
   margin-bottom: 24px;
 }
-@media only screen and (max-width: 767px) {
+
+@media only screen and (min-width: 320px) and (max-width: 375px) {
   .visitors-title {
-    width: 288px;
+    width: 100%;
   }
 }
 
@@ -65,9 +57,9 @@
   background: #c29d84;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 375px) {
   .visitors-item {
-    width: 288px;
+    width: 100%;
   }
 }
 
@@ -95,11 +87,9 @@
 }
 
 .visitors-text {
-  font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
-  color: #0b0803;
 }
 
 @media only screen and (max-width: 767px) {
@@ -108,14 +98,14 @@
   }
 }
 .visitors-name {
-  font-family: 'Quicksand', sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
-  color: #0b0803;
 }
 @media only screen and (min-width: 768px) {
   .visitors-name {
     margin-top: auto;
   }
 }
+
+/* #endregion Testimonials */
