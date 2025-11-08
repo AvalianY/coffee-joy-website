@@ -10,8 +10,13 @@
   --opacity-neutral-darkest-5: rgba(11, 8, 3, 0.05);
   --opacity-neutral-darkest-10: rgba(11, 8, 3, 0.1);
   --opacity-neutral-darkest-15: rgba(11, 8, 3, 0.15);
-  --opacity-neutral-darkest-5: rgba(11, 8, 3, 0.25);
+  --opacity-neutral-darkest-20: rgba(11, 8, 3, 0.2);
+  --opacity-neutral-darkest-50: rgba(11, 8, 3, 0.5);
   --opacity-neutral-darkest-60: rgba(11, 8, 3, 0.6);
+  --opacity-white-0: rgba(255, 255, 255, 0);
+  --opacity-white-5: rgba(255, 255, 255, 0.05);
+  --opacity-white-20: rgba(255, 255, 255, 0.2);
+  --opacity-white-25: rgba(255, 255, 255, 0.25);
   --opacity-white-5: rgba(255, 255, 255, 0.05);
   --opacity-white-20: rgba(255, 255, 255, 0.2);
 }
