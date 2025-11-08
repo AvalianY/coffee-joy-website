@@ -1,26 +1,14 @@
 /* ===== SUBSCRIBE SECTION ===== */
 
 .subscribe {
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .subscribe .container {
-  padding-top: 64px;
-  padding-bottom: 64px;
-
   display: flex;
   flex-direction: column;
   gap: 32px;
-}
-
-@media only screen and (max-width: 767px) {
-  .subscribe .container {
-    max-width: 288px;
-  }
-}
-
-.subscribe .container {
-  padding-top: 64px;
-  padding-bottom: 64px;
 }
 
 .subscribe-content {
