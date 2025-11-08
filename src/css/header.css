@@ -34,6 +34,10 @@
     line-height: 1.5;
     color: #0b0803;
     text-decoration: none;
+    transition:
+            color 0.3s ease,
+            transform 0.2s ease,
+            font-weight 0.3s ease;
 }
 
 .nav-link:hover,
@@ -43,6 +47,7 @@
     font-size: 18px;
     text-decoration: underline;
     text-underline-offset: 4px;
+    transform: translateY(1px);
 }
 
 .burger-btn {
