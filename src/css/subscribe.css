@@ -1,11 +1,8 @@
 /* ===== SUBSCRIBE SECTION ===== */
 
-.subscribe {
+.subscribe .container {
   padding-top: 64px;
   padding-bottom: 64px;
-}
-
-.subscribe .container {
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -199,6 +196,7 @@
 
 /* ===== MEDIA QUERIES ===== */
 
+/* Tablet and larger screens */
 @media only screen and (min-width: 768px) {
   .subscribe-form {
     flex-direction: row;
@@ -215,6 +213,7 @@
   }
 }
 
+/* Desktop screens */
 @media only screen and (min-width: 1440px) {
   .subscribe .container {
     align-items: center;
