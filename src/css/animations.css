@@ -28,7 +28,7 @@
   .animated-button {
     transition: all 0.3s ease;
   }
-  
+
   .animated-button:hover,
   .animated-button:focus {
     transform: translateY(2px);
