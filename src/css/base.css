@@ -1,19 +1,19 @@
 :root {
-  --second-family:'Aboreto', sans-serif;
-  --color-white: #FFFFFF;
-  --color-footer-background: #B58869;
-  --color-background: #E0CBB4;
-  --color-foreground: #C29D84;
-  --color-button: #6F4E37;
-  --color-text: #0B0803;
-  --color-error-red: #7F1C1C;
+  --second-family: 'Aboreto', sans-serif;
+  --color-white: #ffffff;
+  --color-footer-background: #b58869;
+  --color-background: #e0cbb4;
+  --color-foreground: #c29d84;
+  --color-button: #6f4e37;
+  --color-text: #0b0803;
+  --color-error-red: #7f1c1c;
   --opacity-neutral-darkest-5: rgba(11, 8, 3, 0.05);
-  --opacity-neutral-darkest-10:rgba(11, 8, 3, 0.1);
+  --opacity-neutral-darkest-10: rgba(11, 8, 3, 0.1);
   --opacity-neutral-darkest-15: rgba(11, 8, 3, 0.15);
   --opacity-neutral-darkest-5: rgba(11, 8, 3, 0.25);
   --opacity-neutral-darkest-60: rgba(11, 8, 3, 0.6);
-  --opacity-white-5:rgba(255, 255, 255, 0.05);
-  --opacity-white-20:rgba(255, 255, 255, 0.2);
+  --opacity-white-5: rgba(255, 255, 255, 0.05);
+  --opacity-white-20: rgba(255, 255, 255, 0.2);
 }
 
 body {
