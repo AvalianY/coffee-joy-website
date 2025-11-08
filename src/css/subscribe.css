@@ -11,6 +11,11 @@
   background-color: transparent;
 }
 
+.subscribe .container {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
 .subscribe-content {
   /* Box model */
   display: flex;
