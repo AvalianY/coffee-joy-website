@@ -17,6 +17,8 @@
   --opacity-white-5: rgba(255, 255, 255, 0.05);
   --opacity-white-20: rgba(255, 255, 255, 0.2);
   --opacity-white-25: rgba(255, 255, 255, 0.25);
+  --opacity-white-5: rgba(255, 255, 255, 0.05);
+  --opacity-white-20: rgba(255, 255, 255, 0.2);
 }
 
 body {
