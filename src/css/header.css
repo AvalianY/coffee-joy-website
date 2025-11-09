@@ -54,7 +54,7 @@
     font-size: 18px;
     text-decoration: underline;
     text-underline-offset: 4px;
-    transform: translateY(1px);
+    transform: scale(1.1);
 }
 
 .burger-btn {
