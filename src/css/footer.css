@@ -2,6 +2,8 @@
     min-width: 320px;
     padding: 24px 16px;
     background-color: #B58869;
+          margin-left: auto;
+        margin-right: auto;
   
 }
 .footer-container{
@@ -74,6 +76,7 @@ line-height: 1.5;
 @media screen and (min-width: 768px) {
     .footer {
       padding-bottom: 24px ;
+      max-width: 704px;
             }
     .footer-container {
         padding: 40px;
@@ -107,8 +110,7 @@ line-height: 1.5;
         padding: 32px 48px;
         flex-direction: row;
         justify-content: space-between;
-              margin-left: auto;
-        margin-right: auto;
+        
       
     }
     .footer-nav a{
