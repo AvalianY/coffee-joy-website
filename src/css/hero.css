@@ -73,7 +73,7 @@
 }
 
 @media screen and (min-resolution: 192dpi) {
-  .secone {
+ .hero-div {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(/img/img01_dpi2.jpg);
 
    
