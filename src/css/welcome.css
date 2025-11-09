@@ -138,7 +138,7 @@
   }
   .animated-button {
     transition: all 0.3s ease;
-    margin: 0;
+    
   }
 
   .animated-button:hover,
