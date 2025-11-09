@@ -1,6 +1,6 @@
 .footer {
     padding: 24px 16px;
-    background-color: #B58869;    
+    background-color: #B58869;
 }
 .footer-container{
     border: 1px solid rgba(11, 8, 3, 0.15);
@@ -9,11 +9,9 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-    background: #c29d84;
+    background: #C29D84;
 }
-
 .footer-logo-block{
-    
    margin-bottom: 40px;
     text-align: center;
 }
@@ -22,21 +20,17 @@
         fill: #0B0803;
     margin: 0 auto;
 }
-
-
 .social-list {
     margin-bottom: 32px;
     display: flex;
     gap: 12px;
     justify-content: center;
 }
-
 .social-item svg {
     width: 24px;
     height: 24px;
     fill: #0B0803;
 }
-
 .footer-nav {
     display: flex;
     flex-direction: column;
@@ -44,7 +38,6 @@
     justify-content: center;
     text-align: center;
 }
-
 .footer-nav a {
     font-family: "Quicksand", sans-serif;
     font-weight: 400;
@@ -74,33 +67,27 @@ color: #B58869;
     font-weight: 400;
     font-size: 14px;
 line-height: 1.5;
-    color: #0b0803;
+    color: #0B0803;
 }
-
 @media screen and (min-width: 768px) {
     .footer {
             padding: 24px 32px 0; }
-            
     .footer-container {
         padding: 40px;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .footer-top {
-    
             display: flex;
             flex-direction: row;
             align-items: center;
-       
     }
     .footer-nav {
         flex-direction: row;
         justify-content: center;
         gap: 32px;
         text-align: center;
-       
     }
         .footer-logo-block {
             margin-bottom: 32px;
@@ -110,37 +97,27 @@ line-height: 1.5;
         width: 84px;
         height: 36px;}
 }
-
 @media screen and (min-width: 1158px){
-  
-
     .footer-container {
         max-width: 1440px;
         padding: 32px 48px;
         flex-direction: row;
         justify-content: space-between;
     }
-
     .footer-nav a{
         white-space: nowrap;
     }
-    
 .footer-top {
    justify-content: flex-start;
 padding: 0;}
-  
  .footer-logo-block {
      margin-bottom: 0;
  }
-
  .social-list {
      margin-bottom: 0;
  }
-
     .footer-copy {
-      
         width: 100%;
         text-align: center;
     }
 }
-
