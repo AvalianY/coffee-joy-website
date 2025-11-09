@@ -62,7 +62,7 @@ color: #B58869;
     font-size: 18px;
     text-decoration: underline;
     text-underline-offset: 4px;
-    transform: translateY(1px);
+    transform: scale(1.1);
 }
 .footer-copy {
     text-align: center;
