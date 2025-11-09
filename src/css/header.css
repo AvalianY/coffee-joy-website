@@ -29,6 +29,7 @@
 
 .nav-list {
     display: flex;
+    transform-origin: center;
     gap: 32px;
     list-style: none;
     margin: 0;
@@ -43,7 +44,7 @@
     text-decoration: none;
     transition:
         color 0.3s ease,
-        transform 0.2s ease,
+        transform 0.3s ease,
         font-weight 0.3s ease;
 }
 
@@ -51,10 +52,9 @@
 .nav-link:focus {
     color: #b58869;
     font-weight: 700;
-    font-size: 18px;
+    transform: scale(1.2);
     text-decoration: underline;
     text-underline-offset: 4px;
-    transform: translateY(1px);
 }
 
 .burger-btn {
