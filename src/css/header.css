@@ -55,6 +55,7 @@
     transform: scale(1.2);
     text-decoration: underline;
     text-underline-offset: 4px;
+    transform: scale(1.1);
 }
 
 .burger-btn {

@@ -132,6 +132,7 @@
 }
 
 .success-btn-close {
+  border: none;
   border-radius: 100px;
   padding: 10px 24px;
   width: 256px;
