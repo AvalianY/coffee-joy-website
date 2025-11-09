@@ -30,12 +30,13 @@
 
 .experience-gallery-img {
     border-radius: 32px;
+    width: 100%;
     min-width: 288px;
-    height: auto;
+    height: inherit;
     object-fit: cover;
 }
 
-.experience-gallery-img:nth-child(7) {
+.experience-gallery-item:nth-child(7) {
     height: 391px;
 }
 
@@ -46,10 +47,10 @@
         justify-content: center;
         gap: 32px;
     }
-    .experience-gallery-img {
+    .experience-gallery-item {
         max-width: 336px;
     }
-    .experience-gallery-img:nth-child(7) {
+    .experience-gallery-item:nth-child(7) {
         width: 100%;
         max-width: 704px;
     }
@@ -62,15 +63,15 @@
         max-height: 948px;
         justify-content: flex-start;
     }
-    .experience-gallery-img {
+    .experience-gallery-item {
         max-width: 416px;
         }
-    .experience-gallery-img:nth-child(7) {
+    .experience-gallery-item:nth-child(7) {
         max-width: 416px;
         height: auto;
         }
-    .experience-gallery-img:nth-child(3),
-    .experience-gallery-img:nth-child(4) {
+    .experience-gallery-item:nth-child(3),
+    .experience-gallery-item:nth-child(4) {
         max-height: 234px;
         }
 }
