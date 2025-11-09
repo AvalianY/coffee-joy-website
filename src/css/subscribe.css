@@ -161,11 +161,6 @@
 }
 
 .icon-chevrons-right {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
   fill: var(--color-white);
 }
 
@@ -227,4 +222,12 @@
   .subscribe-heading-line-third {
     display: block;
   }
+}
+
+.subscribe-icon-container {
+  width: 24px;
+  height: 24px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
 }
