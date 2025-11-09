@@ -2,6 +2,7 @@
     min-width: 320px;
     padding: 24px 16px;
     background-color: #B58869;
+  
 }
 .footer-container{
     border: 1px solid rgba(11, 8, 3, 0.15);
@@ -72,7 +73,8 @@ line-height: 1.5;
 }
 @media screen and (min-width: 768px) {
     .footer {
-            padding: 24px 32px 0; }
+      padding-bottom: 24px ;
+            }
     .footer-container {
         padding: 40px;
         display: flex;
