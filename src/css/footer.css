@@ -5,7 +5,7 @@
 .footer-container{
     border: 1px solid rgba(11, 8, 3, 0.15);
     border-radius: 40px;
-     padding: 32px 16px;
+     padding: 32px 0;
      display: flex;
      flex-direction: column;
      align-items: center;
@@ -78,6 +78,9 @@ line-height: 1.5;
 }
 
 @media screen and (min-width: 768px) {
+    .footer {
+            padding: 24px 32px 0; }
+            
     .footer-container {
         padding: 40px;
         display: flex;
@@ -86,7 +89,7 @@ line-height: 1.5;
     }
 
     .footer-top {
-        width: 100%;
+    
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -100,8 +103,8 @@ line-height: 1.5;
        
     }
         .footer-logo-block {
-    
             margin-bottom: 32px;
+            margin-right: 40px;
         }
         .footer-logo svg {
         width: 84px;
