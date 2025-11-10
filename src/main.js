@@ -46,27 +46,3 @@ document
     refs.modal.classList.toggle('is-open');
   }
 })();
-
-(() => {
-  const refs = {
-    closeModalBtn: document.querySelector('[data-sub-close]'),
-    extraCloseBtn: document.querySelector('[data-subs-close]'),
-    modal: document.querySelector('[sub-modal]'),
-    form: document.querySelector('[data-sub-form]'), // добавили форму
-  };
-
-  // Закрытие модалки
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-  refs.extraCloseBtn.addEventListener('click', toggleModal);
-
-  // Обработка отправки формы
-  refs.form?.addEventListener('submit', function (e) {
-    e.preventDefault(); // отменяем стандартное поведение
-    // Здесь можно добавить проверку на валидность формы, если нужно
-    refs.modal.classList.add('subscription-open'); // показываем модалку
-  });
-
-  function toggleModal() {
-    refs.modal.classList.toggle('subscription-open');
-  }
-})();
