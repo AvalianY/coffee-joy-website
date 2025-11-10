@@ -233,7 +233,7 @@
         </p>
       </div>
       <div class="subscribe-actions">
-        <form class="subscribe-form">
+        <form class="subscribe-form" data-sub-form>
           <label class="visually-hidden" for="email">Email</label>
           <input
             class="subscribe-input"
@@ -245,11 +245,15 @@
           <span class="subscribe-input-error"
             >Please enter a valid email address</span
           >
-          <button class="subscribe-button animated-button" type="submit">
+          <button
+            class="subscribe-button animated-button"
+            type="submit"
+            data-sub-open
+          >
             Subscribe
             <svg class="icon-chevrons-right" width="13px" height="12px">
-                <use href="/coffee-joy-website/assets/icons-Bg4KvFsa.svg#icon-chevrons-right"></use>
-              </svg>
+              <use href="/coffee-joy-website/assets/icons-Bg4KvFsa.svg#icon-chevrons-right"></use>
+            </svg>
           </button>
         </form>
 
@@ -722,9 +726,9 @@
 
     <!-- Success subscription -->
 
-<div class="backdrop">
+<div class="backdrop" sub-modal>
   <div class="success-sub">
-    <button class="success-btn-x animated-button">
+    <button class="success-btn-x animated-button" data-sub-close type="button">
       <svg class="icon-close" width="15" height="15">
         <use href="/coffee-joy-website/assets/icons-Bg4KvFsa.svg#icon-close"></use>
       </svg>
@@ -740,7 +744,11 @@
       class="success-img"
       loading="lazy"
     />
-    <button type="button" class="success-btn-close animated-button">
+    <button
+      type="button"
+      class="success-btn-close animated-button"
+      data-subs-close
+    >
       Close
     </button>
   </div>
