@@ -150,6 +150,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  border: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -164,4 +165,4 @@
   }
 }
 
-/* #endregion additional task */
+/* #endregion Success subscription */
