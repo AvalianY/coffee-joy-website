@@ -1,5 +1,7 @@
 # CoffeeJoy ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
+[Deutsch](README.md) | [Українська](README.ua.md)
+
 > **CoffeeJoy** is a modern responsive coffee shop website created to present the brand, café atmosphere, service benefits, and contact information for visitors.
 
 ## Table of Contents
